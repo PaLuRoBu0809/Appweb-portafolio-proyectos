@@ -1,0 +1,25 @@
+@import "tailwindcss";
+::-webkit-scrollbar {
+  width: 10px; /* Ancho de la barra vertical */
+  height: 10px; /* Alto de la barra horizontal (si la hay) */
+}
+
+::-webkit-scrollbar-track {
+  background: #000000; /* Fondo negro para que se funda con tu página */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #27272a; /* Un gris oscuro (zinc-800 en Tailwind) */
+  border-radius: 8px; /* Bordes redondeados para un look moderno */
+  border: 2px solid #000000; /* Un pequeño borde negro para darle espacio */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46; /* Se aclara un poco al pasar el mouse (zinc-700) */
+}
+
+/* Para Firefox */
+* {
+  scrollbar-width: thin; /* Hace la barra más delgada */
+  scrollbar-color: #27272a #000000; /* color-del-thumb color-del-track */
+}

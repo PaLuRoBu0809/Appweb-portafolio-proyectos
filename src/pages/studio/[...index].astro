@@ -1,0 +1,14 @@
+---
+import SanityStudio from '../../components/SanityStudio'
+export const prerender = false
+---
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Studio</title>
+    <style>html, body { margin: 0; height: 100%; }</style>
+  </head>
+  <body>
+    <SanityStudio client:only="react" />
+  </body>
+</html>

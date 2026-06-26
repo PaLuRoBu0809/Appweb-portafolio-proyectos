@@ -1,11 +1,19 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import MainLayout from '../layouts/MainLayout.astro';
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<MainLayout title="Pablo Rodriguez">
+  
+  <div class="py-20">
+    <h1 class="text-5xl font-extrabold tracking-tight max-w-2xl mb-6">
+      Proyectos con Impacto Real
+    </h1>
+    <p class="text-gray-400 text-lg max-w-xl mb-8">
+      Una selección de soluciones de software diseñadas para optimizar procesos de negocio, integrar inteligencia artificial y resolver problemas complejos mediante arquitecturas escalables.
+    </p>
+    <a href="/mis-proyectos" class="inline-block bg-white text-black font-semibold px-6 py-3 rounded hover:bg-gray-200 transition-colors">
+      Conoce mi trabajo
+    </a>
+  </div>
+
+</MainLayout>
