@@ -21,6 +21,17 @@ export default defineConfig({
           { name: 'title',       title: 'Título',     type: 'string' },
           { name: 'subtitle',    title: 'Subtítulo',  type: 'string' },
           { name: 'bannerImage', title: 'Banner',     type: 'image', options: { hotspot: true } },
+
+
+          {
+            name: 'videoProyecto',
+            title: 'Video del Proyecto',
+            type: 'file',
+            options: {
+              accept: 'video/*'
+            }
+          },
+
           { name: 'description', title: 'Descripción',type: 'text' },
           { name: 'queHace',     title: 'Qué hace',   type: 'array', of: [{ type: 'string' }] },
           { name: 'stack',       title: 'Stack',      type: 'array', of: [{ type: 'string' }] },
